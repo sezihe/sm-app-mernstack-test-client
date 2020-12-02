@@ -1,24 +1,17 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react';
+import './css/App.css';
+import GlobalStateProvider from './store/GlobalStateProvider';
+import { BrowserRouter } from 'react-router-dom';
+import Router from './Router';
 
-class App extends Component {
-  constructor(props) {
-    super();
-    // set state
-    this.state = {
-
-    }
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <p>
-          Would be back! 💙
-        </p>
-      </div>
-    );
-  }
+const App = () => {
+  return (
+    <GlobalStateProvider>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+    </GlobalStateProvider>
+  );
 }
 
 export default App;

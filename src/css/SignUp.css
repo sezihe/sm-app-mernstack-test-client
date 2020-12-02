@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rambla&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+input, h1, p {
+    font-family: 'Rambla', sans-serif;
+}
+
+.signup-main {
+    background-color: #2d3436;
+    height: 100%;
+    min-height: 100vh;
+    padding-top:  20px;
+    padding-right: 70px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+
+.signup-title {
+    position: relative;
+    margin-top: 170px;
+    margin-left: 30px;
+}
+
+.signup-form{
+    font-family: 'Rambla', sans-serif;
+    margin-top: 50px;
+}
+
+.each-field{
+    margin-bottom: 1.3rem;
+}
+
+.signup-btn {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* phone */
+
+@media (max-width: 570px) {
+    .signup-main {
+        background-color: #2d3436;
+        height: 100%;
+        min-height: 100vh;
+        padding-top:  50px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 40px;
+    }
+
+    .signup-title {
+        position: relative;
+        margin-top: 0px;
+    }
+
+    .signup-form{
+        font-family: 'Rambla', sans-serif;
+        margin-top:25px;
+    }
+}
